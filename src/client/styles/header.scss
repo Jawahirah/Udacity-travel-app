@@ -1,0 +1,24 @@
+header {
+    display: flex;
+    justify-content: space-between;
+
+    .background{
+        background: beige;
+        width: 100%;
+        img{
+            width: 8%;
+        }
+    }
+
+    h1 {
+        padding-bottom: 23px;
+        display: inline-block;
+        position: absolute;
+        margin-left: 28%;
+        font-size: 49px;
+        font-family: monospace;
+        top: 41px;
+        font-variant: all-small-caps;
+    }
+}
+

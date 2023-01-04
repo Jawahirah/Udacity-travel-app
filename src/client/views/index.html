@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link rel="stylesheet" href="/styles/resets.css">
+    <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/form.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+</head>
+
+<body>
+    <header>
+    </header>
+    <div class="container">
+        <div class="box box-1">
+            <img src="assets/image.jpg" id="place">
+        </div>
+        <div class="box box-2">
+            <form class="" onsubmit="return Client.handleSubmit(event)">
+                <label for="city">Enter City Name:</label>
+                <input id="city" type="text" name="input" value="" onblur="onBlur()" placeholder="City">
+                <label for="date">Travel Date:</label>
+                <input id="date" type="date" name="">
+                <input id="btn" type="submit" name="" value="SUBMIT" onclick="return Client.handleSubmit(event)"
+                    onsubmit="return handleSubmit(event)">
+            </form>
+            <div id="info"></div>
+
+        </div>
+    </div>
+    <footer>
+    </footer>
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+</body>
+
+</html>
